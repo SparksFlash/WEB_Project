@@ -1,13 +1,10 @@
 <?php include('partials/menu.php'); ?>
 
-<!-- Main Content Section -->
 <div class="main-content">
     <div class="wrapper">
-        <h1>Manage Admin</h1>
-
-
+        <h1>Manage Category</h1>
     </div>
 </div>
-<!-- Main Content Section ends -->
+
 
 <?php include('partials/footer.php'); ?>

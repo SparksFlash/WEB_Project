@@ -15,7 +15,45 @@
     clear: both;
     float: none;
 }
+.table-full{
+    width: 100%;
+}
 
+table tr th{
+    border-bottom: 1px solid black;
+    padding:1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.button-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.button-primary:hover{
+    background-color: #3742fa;
+}
+
+.button-secondary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.button-secondary:hover{
+    background-color: #3742fa;
+}
 
 /* Menu */
 .menu{

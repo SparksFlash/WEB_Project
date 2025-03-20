@@ -10,6 +10,7 @@
 }
 .img-responsive{
     width: 100%;
+    border-radius: 50%;
 }
 .img-curve{
     border-radius: 50px;

@@ -1,3 +1,5 @@
+<?php include('../config/constants.php'); ?>
+
 <html>
 
 <head>
@@ -8,6 +10,14 @@
 <body>
     <!-- Main section start -->
     <div class="menu text-center">
+        <div class="logo-background">
+            <a href="#" title="Logo">
+                <img
+                    src="../images/logo.png"
+                    alt="Restaurant Logo"
+                    class="img-responsive" />
+            </a>
+        </div>
         <div class="wrapper">
 
             <ul>

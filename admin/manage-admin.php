@@ -8,7 +8,7 @@
         <br /><br />
 
         <!-- Button for add an Admin -->
-        <a href="#" class="button-primary">Add Admin</a>
+        <a href="add_Admin.php" class="button-primary">Add Admin</a>
 
         <br /><br /><br />
 
@@ -27,7 +27,7 @@
                 <td>SparksFlash</td>
                 <td>
                     <a href="#" class="button-secondary">Update Admin</a>
-                    <a href="#" class="button-secondary">Delete Admin</a>
+                    <a href="#" class="button-for-del">Delete Admin</a>
                 </td>
             </tr>
 
@@ -36,8 +36,8 @@
                 <td>Sourav</td>
                 <td>SparksFlash</td>
                 <td>
-                    Update Admin
-                    Delete Admin
+                    <a href="#" class="button-secondary">Update Admin</a>
+                    <a href="#" class="button-for-del">Delete Admin</a>
                 </td>
             </tr>
 
@@ -46,8 +46,8 @@
                 <td>Sourav</td>
                 <td>SparksFlash</td>
                 <td>
-                    Update Admin
-                    Delete Admin
+                    <a href="#" class="button-secondary">Update Admin</a>
+                    <a href="#" class="button-for-del">Delete Admin</a>
                 </td>
             </tr>
         </table>

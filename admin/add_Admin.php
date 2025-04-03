@@ -58,13 +58,13 @@
 
 
 <?php
-if (isset($_POST['submit'])) {  // $_POST contains an array of variables received via the HTTP POST method.
+if (isset($_POST['submit'])) {  // 1. $_POST contains an array of variables received via the HTTP POST method.
     //echo "Button Clicked";
     $full_name = $_POST['full_name'];
     $username = $_POST['username'];
     $password = md5($_POST['password']);
 
-
+    //2
     $sql = "INSERT INTO table_admin SET
     full_name = '$full_name',
     username =  '$username',
@@ -75,10 +75,15 @@ if (isset($_POST['submit'])) {  // $_POST contains an array of variables receive
 
 
 
-
+    //3
     $res = mysqli_real_query($conn, $sql) or die(mysqli_error($conn));
+
+
+    //4 check
     if ($res == true) {
         echo "Data Inserted";
+        // Create a session variable to display message
+        
     } else {
         echo "Failed To Insert Data";
     }

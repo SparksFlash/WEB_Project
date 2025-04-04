@@ -83,7 +83,9 @@ if (isset($_POST['submit'])) {  // 1. $_POST contains an array of variables rece
     if ($res == true) {
         echo "Data Inserted";
         // Create a session variable to display message
-        
+        $_SESSION['add'] = "Admin Added Successfully";
+        //redirect to manage admin
+        header("location" . SITEURL . 'admin/manage-admin.php');
     } else {
         echo "Failed To Insert Data";
     }

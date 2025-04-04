@@ -1,6 +1,7 @@
 <?php
 
 
+define('SITEURL', 'http://localhost/WEB_Project/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('PASSWORD', '');

@@ -1,12 +1,22 @@
-<?php include('partials/menu.php'); ?>
+<?php
+session_start();
+include('partials/menu.php'); ?>
 
 <!-- Main Content Section -->
 <div class="main-content">
     <div class="wrapper">
         <h1>Manage Admin</h1>
 
-        <br /><br />
+        <br />
 
+        <?php
+        if (isset($_SESSION['add'])) {
+            echo $_SESSION['add'];
+            unset($_SESSION['add']);
+        }
+        ?>
+
+        <br /><br /><br />
         <!-- Button for add an Admin -->
         <a href="add_Admin.php" class="button-primary">Add Admin</a>
 

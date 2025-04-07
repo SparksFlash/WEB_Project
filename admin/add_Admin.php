@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {  // 1. $_POST contains an array of variables rece
         //redirect to manage admin
         header("location" . SITEURL . 'admin/manage-admin.php');
     } else {
-        //echo "Failed To Insert Data";
+        // echo "Failed To Insert Data";
         // Create a session variable to display message
         $_SESSION['add'] = "Failed to Add Admin";
         //redirect to manage admin

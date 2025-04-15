@@ -10,6 +10,17 @@ include('partials/menu.php'); ?>
 
         <br><br>
 
+
+        <?php
+        if (isset($_SESSION['add'])) {
+            echo $_SESSION['add'];
+            unset($_SESSION['add']);
+        }
+        ?>
+
+
+
+
         <form action="" method="POST">
             <table class="table-30">
 

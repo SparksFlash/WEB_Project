@@ -17,6 +17,8 @@ include('partials/menu.php'); ?>
         ?>
 
         <br /><br /><br />
+
+
         <!-- Button for add an Admin -->
         <a href="add_Admin.php" class="button-primary">Add Admin</a>
 

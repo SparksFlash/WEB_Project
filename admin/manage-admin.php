@@ -33,35 +33,43 @@ include('partials/menu.php'); ?>
             </tr>
 
 
-            <tr>
-                <td>1.</td>
-                <td>Sourav</td>
-                <td>SparksFlash</td>
-                <td>
-                    <a href="#" class="button-secondary">Update Admin</a>
-                    <a href="#" class="button-for-del">Delete Admin</a>
-                </td>
-            </tr>
 
-            <tr>
-                <td>2.</td>
-                <td>Sourav</td>
-                <td>SparksFlash</td>
-                <td>
-                    <a href="#" class="button-secondary">Update Admin</a>
-                    <a href="#" class="button-for-del">Delete Admin</a>
-                </td>
-            </tr>
+            <?php
 
-            <tr>
-                <td>3.</td>
-                <td>Sourav</td>
-                <td>SparksFlash</td>
-                <td>
-                    <a href="#" class="button-secondary">Update Admin</a>
-                    <a href="#" class="button-for-del">Delete Admin</a>
-                </td>
-            </tr>
+            $sql = "SELECT * FROM table_admin";
+            $res = mysqli_query($conn, $sql);
+            $sn = 1;
+
+            if ($res == true) {
+                $count = mysqli_num_rows($res);
+                if ($count > 0) {
+                    while ($rows = mysqli_fetch_assoc($res)) {
+                        $id = $rows['id'];
+                        $full_name = $rows['full_name'];
+                        $username = $rows['username'];
+
+
+            ?>
+                        <tr>
+                            <td><?php echo $sn++ ?></td>
+                            <td><?php echo $full_name ?></td>
+                            <td><?php echo $username ?></td>
+                            <td>
+                                <!-- passing the value with URL using get method -->
+                                <a href="#" class="button-secondary">Update Admin</a>
+                                <a href="<?php echo SITEURL; ?>admin/delete_Admin.php?id=<?php echo $id; ?>" class="button-for-del">Delete Admin</a>
+                            </td>
+                        </tr>
+            <?php
+
+                    }
+                } else {
+                }
+            }
+
+
+            ?>
+
         </table>
     </div>
 </div>

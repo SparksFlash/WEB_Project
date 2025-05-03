@@ -80,6 +80,16 @@ table tr td{
     background-color: #ff4757;
 }
 
+.success{
+    color: #2ed573;
+}
+.error{
+    color: #ff4757;
+}
+.add-success{
+    color: #1e90ff;
+}
+
 /* Menu */
 .menu{
     border-bottom:1px solid #eccc68;
@@ -118,11 +128,12 @@ table tr td{
 
 /* Footer */
 .footer{
-    background-color: #eccc68;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: fixed; 
+   bottom: 0;
+   width: 100%;
+   background-color: #eccc68;
+   z-index: 1000;
+   text-align: center;
 }
 
 

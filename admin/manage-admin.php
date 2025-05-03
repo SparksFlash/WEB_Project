@@ -9,12 +9,27 @@ include('partials/menu.php'); ?>
 
         <br />
 
+
+
         <?php
         if (isset($_SESSION['add'])) {
             echo $_SESSION['add'];
             unset($_SESSION['add']);
         }
+
+        if (isset($_SESSION['delete'])) {
+            echo $_SESSION['delete'];
+            unset($_SESSION['delete']);
+        }
+
+        if (isset($_SESSION['update'])) {
+            echo $_SESSION['update'];
+            unset($_SESSION['update']);
+        }
         ?>
+
+
+
 
         <br /><br /><br />
 
@@ -56,7 +71,7 @@ include('partials/menu.php'); ?>
                             <td><?php echo $username ?></td>
                             <td>
                                 <!-- passing the value with URL using get method -->
-                                <a href="#" class="button-secondary">Update Admin</a>
+                                <a href="<?php echo SITEURL; ?>admin/update_Admin.php?id=<?php echo $id; ?>" class="button-secondary">Update Admin</a>
                                 <a href="<?php echo SITEURL; ?>admin/delete_Admin.php?id=<?php echo $id; ?>" class="button-for-del">Delete Admin</a>
                             </td>
                         </tr>

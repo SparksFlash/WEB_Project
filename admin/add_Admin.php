@@ -96,15 +96,15 @@ if (isset($_POST['submit'])) {  // 1. $_POST contains an array of variables rece
     if ($res == true) {
         // echo "Data Inserted";
         // Create a session variable to display message
-        $_SESSION['add'] = "Admin Added Successfully";
+        $_SESSION['add'] = "<div class='add-success'>Admin Added Successfully</div>";
         //redirect to manage admin
-        header("location" . SITEURL . 'admin/manage-admin.php');
+        header("location:" . SITEURL . 'admin/manage-admin.php');
     } else {
         // echo "Failed To Insert Data";
         // Create a session variable to display message
         $_SESSION['add'] = "Failed to Add Admin";
         //redirect to manage admin
-        header("location" . SITEURL . 'admin/add_Admin.php');
+        header("location:" . SITEURL . 'admin/add_Admin.php');
     }
 }
 ?>

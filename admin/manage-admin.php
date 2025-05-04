@@ -71,7 +71,7 @@ include('partials/menu.php'); ?>
                             <td><?php echo $username ?></td>
                             <td>
                                 <!-- passing the value with URL using get method -->
-                                <a href="" class="button-primary">Change Password</a>
+                                <a href="<?php echo SITEURL; ?>admin/update_Password.php?id=<?php echo $id; ?>" class="button-primary">Change Password</a>
                                 <a href="<?php echo SITEURL; ?>admin/update_Admin.php?id=<?php echo $id; ?>" class="button-secondary">Update Admin</a>
                                 <a href="<?php echo SITEURL; ?>admin/delete_Admin.php?id=<?php echo $id; ?>" class="button-for-del">Delete Admin</a>
                             </td>

@@ -26,6 +26,19 @@ include('partials/menu.php'); ?>
             echo $_SESSION['update'];
             unset($_SESSION['update']);
         }
+
+        if (isset($_SESSION['user-not-found'])) {
+            echo $_SESSION['user-not-found'];
+            unset($_SESSION['user-not-found']);
+        }
+        if (isset($_SESSION['password-not-match'])) {
+            echo $_SESSION['password-not-match'];
+            unset($_SESSION['password-not-match']);
+        }
+        if (isset($_SESSION['change-password'])) {
+            echo $_SESSION['change-password'];
+            unset($_SESSION['change-password']);
+        }
         ?>
 
 
